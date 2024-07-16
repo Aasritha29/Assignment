@@ -1,0 +1,268 @@
+/*base rules*/
+*{
+    margin:0;
+    padding:0;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Montserrat',sans-serif;
+}
+
+p{
+    font-family:'Nunito',sans-serif;
+    font-size:20px;
+    line-height:30px;
+    color:gray;
+}
+
+.r-p{
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+/*Nav section*/
+nav.r-nav{
+    background:transparent;
+    padding:20px 0;
+    transition:.5s all;
+}
+
+nav .navbar-brand{
+    font-size: 30px;
+    color:#fff ;  
+}
+
+nav .navbar-nav li a{
+ color:rgba(255,255,255,0.8) !important;
+ font-size:16px;
+ letter-spacing: 0.05em;
+ font-weight: 600;
+ font-family: 'Nunito',sans-serif;
+}
+
+nav .navbar-nav li{
+    margin-left:15px;
+}
+
+nav.r-nav.stickyadd
+{
+    background:#fff !important;
+    padding:15px 0;
+    box-shadow:0px 1px 8px 3px rgba(0,0,0,0.05);
+    transition:.5s all ease-in-out;
+}
+
+nav.stickyadd .navbar-brand{
+    color:#000;
+    font-size:40px;
+    transition:0.5s all;
+}
+
+nav.stickyadd .navbar-nav .nav-link{
+    color:black !important;
+}
+
+
+.popup{
+    margin:30px;
+    width:500px;
+    padding:50px;
+    background:#EE8683;
+    border-radius: 6px;
+    position:absolute;
+    top:0%;
+    left:50%;
+    transform:translate(-50% ,-50%);
+    visibility: hidden;
+}
+
+.open-popup{
+    visibility:visible;
+    top:50%;
+}
+.popup .form{
+       padding:10px;
+}
+
+.popup button{
+    height:30px;
+    width:80px;
+    
+    
+}
+/*header section starts*/
+header{
+    height:100vh;
+    width:100%;
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('../images/backgroundimg.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.header-content{
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+}
+
+
+.typed-out {
+    overflow: hidden;
+    /*border-right: .15em solid orange;*/
+    font-size: 1.6rem;
+    width: 0;
+    
+  }
+
+  .container{
+    display:inline-block;
+  }
+
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+
+ .typed-out{
+    overflow: hidden;
+    border-right: .15em solid orange;
+    white-space: nowrap;
+    font-size: 1.6rem;
+    width: 0;
+    animation: typing 1s forwards;
+}
+
+.content-box{
+    width:700px;
+    color:#fff;
+}
+
+.content-box h4{
+    font-size: 30px;
+}
+
+.content-box h1{
+    font-size:52px;
+}
+
+.content-box a{
+    color:white;
+    text-decoration: none;
+    border:2px solid #fff;
+    border-radius:20px;
+    padding:5px 25px;
+}
+
+.content-box a:hover{
+    color:black;
+    background:white;
+    transition:0.5s all;
+}
+
+.content-box p{
+    color:white;
+}
+
+.col-lg-6 img{
+    height:500px;
+    width:700px;
+}
+
+
+/*About Us*/
+.about li a{
+    color:#000;
+    display:inline-block;
+    height:42px;
+    width:42px;
+    font-size:20px;
+    border:2px solid #d4d4d4;
+    border-radius:50%;
+    line-height: 40px;
+    transition:.5s all;
+    text-align:center;
+}
+
+.about li a:hover{
+    color:#EE8683;
+}
+
+/*---Skills---*/
+
+.skills .bg{
+    background-color: antiquewhite;
+}
+
+.skills h1{
+    align-items: center;
+    margin:auto;
+    width:20%;
+    padding:10px;
+    
+}
+.card{
+    height:100px;
+   /*background-color: rgba(0,0,0,0.4);  */
+    /*color:white;*/
+    font-size:40px;
+    margin:5px;
+    width:100px;
+    flex:100px 0 0;
+    border:#fff;
+    
+}
+
+.card img{
+    height:100px;
+    width:100px;
+    border-radius: 50%;
+    scroll-behavior: none;
+    opacity:0.8;
+}
+
+.cards-wrapper{
+    display:flex;
+    transition:ease 0.5s;
+}
+
+.cards-wrapper .card img:hover{
+        opacity: 1.0;
+}
+
+.display-area{
+    width:330px;
+    overflow:hidden ;
+    margin:auto;
+
+    overflow-x:hidden;
+    overflow-y:hidden;
+}
+
+
+.dots-wrapper{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.dot{
+    border:none;
+    background:rgba(0,0,0,0.2);
+    width:5px;
+    height:5px;
+    margin:5px;
+    
+    border-radius:50%;
+    outline:none;
+}
+
+.dot:hover{
+    background:rgba(222, 12, 12, 0.823);
+}
+
+.dot.active{
+    background:rgba(14, 134, 50, 0.895)
+}

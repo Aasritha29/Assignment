@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="lib/css/bootstrap.min.css">
+    <link rel="stylesheet"  href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:400,600,700|Nunito:400,700" rel="stylesheet">
+    <title>Assignment</title>
+</head>
+<body>
+  
+     <nav class="navbar navbar-expand-lg sticky fixed-top r-nav">
+        <div class="container">
+            <a href="#" class="navbar-brand">Aasritha</a>
+           
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">About</a>
+                    </li>
+                  
+                    <li class="nav-item">
+                        <a href="#skills" class="nav-link">Skills</a>
+                    </li>
+                 </ul>
+            </div>
+    </nav>
+
+     <!--nav section ends-->
+
+     <!--header starts-->
+
+     <header id="home">
+        <div class="container-fluid header-content">
+        <div class="row">
+            <div class="col text-center">
+                <div class="content-box">
+                    <h4>Welcome</h4>
+                   <div class="container">
+                    <h1>I'm Aasritha</h1>
+                    <div class="typed-out">Web Developer</div>
+                   </div>
+                
+                  
+                    <p>Hii...I am a fresher looking for a job.</p>
+                    <a href="#" class="btn" onclick="openPopup()">Contact</a>
+                    <div class="popup" id="popup">
+                        <div class="form">
+                        <label for="name">Enter your name:</label>
+                        <input type="text" name="name" id="name" required/>
+                         </div>
+
+                         <div class="form">
+                            <label for="email">Enter your email:</label>
+                            <input type="email" name="email" id="email" required/>
+                         </div>
+
+                         <div class="form">
+                            <button type="submit" onclick="closePopup()">Submit</button>
+                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        </div>
+     </header>
+
+     <section class="about r-p" id="about">
+        <div class="container">
+            <div class="row">
+              <div class="col-lg-6">
+                <img src="images/download.jpeg"  class="image-fluid img-thumbnail" alt="profile picture" onmouseover="this.src='images/profile2.jpg'" onmouseout="this.src='images/download.jpeg'" >
+                </div>
+                <div class="col-lg-6 mt-5 mt-lg-0">
+                <h2>About Me</h2>
+                <h4>I'm Aasritha</h4>
+                <p>I have completed my B.Tech in the stream of Computer Science and Engineering with 85%.</p>
+                <p>After completion of my graduation I have done intern at kodnest as Trainee.There I have learned java,springboot. </p>
+                <p>My hobbies include listening to music,learning new things.I love enjoying the nature.</p>
+                <p>I have created my youtube channel just to upload my music videos.</p>
+                 <div>
+                <ul class="list-inline"></ul>
+                <li class="list-inline-item"><a href="https://www.linkedin.com/in/aasritha-grandhi-16898b214"><i class="fa-brands fa-linkedin"></i></a></li>
+                <li class="list-inline-item"><a href="https://youtube.com/@aasritha.grandhi7374?si=8iz1ffnjS01lPl-n"><i class="fa-brands fa-youtube"></i></a></li>  
+            </div>   
+            </div>
+              </div>
+            </div>
+     </section>
+
+
+     <!--Skills-->
+      <div class="skills">
+        <div class="bg">
+     <h1>I'm Good At</h1>
+     </div>
+     <div class="display-area">
+        <div class="cards-wrapper">
+            <div class="card"><img src="images/java.png" alt=""></div>
+            <div class="card"><img src="images/sql.png" alt=""></div>
+            <div class="card"><img src="images/mvc.jpeg" alt=""></div>
+            <div class="card"><img src="images/html.png" alt=""></div>
+            <div class="card"><img src="images/css.png" alt=""></div>
+            <div class="card"><img src="images/js.png" alt=""></div>
+            
+        </div>
+     </div>
+
+
+       <div class="dots-wrapper">
+           <button class="dot active"></button>
+           <button class="dot"></button>
+           
+       </div>
+   </div>
+    <script src="lib/jquery-3.7.1.min.js"></script>
+    <script src="lib/js/bootstrap.min.js"></script>
+    <script src="js/app.js"></script>
+
+</body>
+</html>
